@@ -159,8 +159,13 @@ section img {
 
 .img-floating {
   border-radius: 8px;
-  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.493);
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.39);
   border: 1px solid #000000;
+}
+.img-floating:hover {
+  transition: all 0.4s;
+  transform: scale(1.1);
+  box-shadow: 3px 10px 20px rgba(0, 0, 0, 0.575);
 }
 
 .row {

@@ -1,7 +1,12 @@
-@mixin floating($radius: 8px, $shadow: 0 5px 10px rgba(0, 0, 0, 0.493), $border: 1px solid #000000) {
+@mixin floating($radius: 8px, $shadow: 0 5px 10px rgba(0, 0, 0, 0.39), $border: 1px solid #000000) {
   border-radius: $radius;
   box-shadow: $shadow;
   border: $border;
+  &:hover {
+    transition: all 0.4s;
+    transform: scale(1.1);
+    box-shadow: 3px 10px 20px rgba(0, 0, 0, 0.575);
+  }
 }
 
 @mixin gridGenerator($colonne) {
