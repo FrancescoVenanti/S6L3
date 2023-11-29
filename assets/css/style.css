@@ -255,6 +255,11 @@ body {
 .hero .description h1 {
   font-size: 64px;
   color: #dbdbdb;
+  transition: transform 1s;
+  cursor: pointer;
+}
+.hero .description h1:hover {
+  transform: rotate(360deg);
 }
 .hero .description h3 {
   font-size: 20px;
@@ -272,9 +277,4 @@ body {
   flex-direction: column;
   justify-content: center;
   gap: 20px;
-}
-
-.test {
-  background-color: lightblue;
-  height: 100px;
 }/*# sourceMappingURL=style.css.map */

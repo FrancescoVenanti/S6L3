@@ -67,6 +67,11 @@ body {
     h1 {
       font-size: 64px;
       color: $secondaryColorHigh;
+      transition: transform 1s;
+      cursor: pointer;
+      &:hover {
+        transform: rotate(360deg);
+      }
     }
     h3 {
       font-size: 20px;
@@ -86,9 +91,4 @@ body {
     justify-content: center;
     gap: 20px;
   }
-}
-
-.test {
-  background-color: lightblue;
-  height: 100px;
 }
