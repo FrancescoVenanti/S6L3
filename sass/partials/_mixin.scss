@@ -1,0 +1,15 @@
+@mixin floating($radius: 8px, $shadow: 0 5px 10px rgba(0, 0, 0, 0.493), $border: 1px solid #000000) {
+  border-radius: $radius;
+  box-shadow: $shadow;
+  border: $border;
+}
+
+@mixin gridGenerator($colonne) {
+  display: flex;
+  gap: 10px;
+  @for $i from 1 through $colonne {
+    .col-#{$i} {
+      width: calc(100% / $i - 10px * $i);
+    }
+  }
+}

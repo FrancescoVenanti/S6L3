@@ -1,0 +1,23 @@
+$sizes: (
+  sm: 0.5rem,
+  md: 1rem,
+  lg: 1.5rem,
+  xl: 2rem,
+  xxl: 2.5rem,
+);
+
+@mixin spacingClasses($type, $property, $nameShort, $typeShort) {
+  @each $size, $value in $sizes {
+    .#{$nameShort}#{$typeShort}-#{$size} {
+      #{$property}-#{$type}: $value;
+    }
+  }
+}
+
+// Generate block padding classes
+@include spacingClasses(block, padding, p, b);
+@include spacingClasses(block, margin, m, b);
+
+// Generate inline padding classes
+@include spacingClasses(inline, margin, p, in);
+@include spacingClasses(inline, padding, m, in);

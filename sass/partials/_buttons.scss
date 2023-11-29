@@ -1,0 +1,23 @@
+$btnColors: (#0e6cff, #ff8700, #4caf50);
+
+@for $i from 1 through length($btnColors) {
+  $color: nth($btnColors, $i);
+
+  .btn-#{$i} {
+    background-color: $color;
+    color: $secondaryColor;
+    border: 2px solid darken($color, 20%);
+    padding: 1rem 3rem;
+    text-align: center;
+    display: inline-block;
+    font-size: inherit;
+    cursor: pointer;
+
+    &:hover {
+      transition: all 0.3s;
+      background-color: darken($color, 10%);
+      border: none;
+      transform: scale(1.1);
+    }
+  }
+}

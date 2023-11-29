@@ -1,0 +1,16 @@
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.hero-animated {
+  opacity: 0;
+  animation: fadeIn 1s ease-out forwards;
+  // Aggiungi eventuali altre proprietà stili qui, come position: relative, margin-top, ecc.
+}
