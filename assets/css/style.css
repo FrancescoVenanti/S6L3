@@ -89,8 +89,8 @@
   color: #f4f4f4;
   border: 2px solid #0041a7;
   padding: 1rem 3rem;
+  border-radius: 20px;
   text-align: center;
-  display: inline-block;
   font-size: inherit;
   cursor: pointer;
 }
@@ -106,8 +106,8 @@
   color: #f4f4f4;
   border: 2px solid #995100;
   padding: 1rem 3rem;
+  border-radius: 20px;
   text-align: center;
-  display: inline-block;
   font-size: inherit;
   cursor: pointer;
 }
@@ -123,8 +123,8 @@
   color: #f4f4f4;
   border: 2px solid #2d682f;
   padding: 1rem 3rem;
+  border-radius: 20px;
   text-align: center;
-  display: inline-block;
   font-size: inherit;
   cursor: pointer;
 }

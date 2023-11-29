@@ -8,8 +8,8 @@ $btnColors: (#0e6cff, #ff8700, #4caf50);
     color: $secondaryColor;
     border: 2px solid darken($color, 20%);
     padding: 1rem 3rem;
+    border-radius: 20px;
     text-align: center;
-    display: inline-block;
     font-size: inherit;
     cursor: pointer;
 
