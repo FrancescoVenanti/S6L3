@@ -14,10 +14,8 @@ $sizes: (
   }
 }
 
-// Generate block padding classes
 @include spacingClasses(block, padding, p, b);
 @include spacingClasses(block, margin, m, b);
 
-// Generate inline padding classes
 @include spacingClasses(inline, margin, p, in);
 @include spacingClasses(inline, padding, m, in);
